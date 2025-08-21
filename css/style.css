@@ -1,0 +1,353 @@
+ body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f9f9f9;
+            color: #222;
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+            /* PELO AMOR DE DEUS, RESOLVER O ESPAÇO BRANCO DO LADO DIRETO, QUE APARECE SEM O OVERFLOW-X E NO MOBILE */
+        }
+        .container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+ 
+        }
+        .left {
+            background: #2d3236;
+            color: #fff;
+            width: 45%;
+            padding: 2rem 2rem 2rem 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .arrow {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .left h1 {
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+        .yellow {
+            color: #ffe600;
+            font-weight: bold;
+            font-size: 1.7rem;
+            margin-bottom: 2rem;
+            justify-content: left;
+        }
+        .white {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .right {
+            width: 55%;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .right img {
+            width: 100%;
+            height: 100%;
+          
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #eee;
+            font-size: 0.9rem;
+            color: #555;
+            position: sticky;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                height: auto;
+            }
+            .left, .right {
+                width: 100%;
+                padding: 1rem;
+            }
+            .right img {
+                max-width: 100%;
+            }
+            footer {
+                position: static;
+            }
+        }
+        /* segunda tela */
+        .child-section {
+    width: 100vw;
+    background: #a3a3a3;
+    padding: 4rem 0 6rem 0;
+    display: flex;
+    justify-content: center;
+}
+.child-container {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    max-width: 1400px;
+}
+.child-img-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child-img-box img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.child-yellow-box {
+    background: #ffe600;
+    padding: 2.5rem 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    min-width: 350px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.child-yellow-box .child-quote {
+    font-size: 1.3rem;
+    color: #222;
+    margin-bottom: 1.2rem;
+}
+.child-yellow-box hr {
+    border: none;
+    border-top: 2px solid #222;
+    margin-bottom: 1.2rem;
+}
+.child-yellow-box .child-main-text {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #222;
+    line-height: 1.1;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+@media (max-width: 900px) {
+    .child-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 98vw;
+    }
+    .child-yellow-box {
+        max-width: 95vw;
+        min-width: unset;
+        padding: 1.5rem 1rem;
+    }
+    .child-img-box {
+        padding: 1rem;
+    }
+    .child-img-box img {
+        max-width: 95vw;
+    }
+}
+  /* terceira tela */
+
+.atividades-section {
+    width: 100vw;
+    background: #23262a;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0 6rem 0;
+}
+.atividades-container {
+    display: flex;
+    gap: 2rem;
+    width: 90vw;
+    max-width: 1200px;
+}
+.atividades-left {
+    background: #fff;
+    border: 4px solid #59a9ff;
+    padding: 2.5rem 2rem 2.5rem 2rem;
+    border-radius: 0.5rem;
+    flex: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.atividades-title {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+.atividades-left h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.atividades-left p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+.atividades-vertical {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #23262a;
+    letter-spacing: 0.2rem;
+}
+.atividades-right {
+    background: #ffe600;
+    border-radius: 0.5rem;
+    padding: 2.5rem 2rem;
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.atividades-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.2rem 0;
+}
+.atividades-right ul li {
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+    color: #23262a;
+    font-weight: bold;
+}
+.atividades-right hr {
+    border: none;
+    border-top: 2px solid #23262a;
+    margin: 1.2rem 0;
+}
+.atividades-ajuda {
+    font-size: 1.1rem;
+    color: #23262a;
+    margin-bottom: 1.2rem;
+}
+.atividades-ajuda strong {
+    font-weight: bold;
+}
+.atividades-encontre {
+    margin-top: 1.2rem;
+    font-size: 1.3rem;
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: #23262a;
+}
+@media (max-width: 900px) {
+    .atividades-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 98vw;
+    }
+    .atividades-left, .atividades-right {
+        padding: 1.5rem 1rem;
+    }
+    .atividades-vertical {
+        position: static;
+        transform: none;
+        margin-top: 1rem;
+        text-align: right;
+    }
+}
+
+.trabalho-section {
+    background: #fff;
+    padding: 4rem 0 4rem 0;
+    text-align: center;
+}
+.trabalho-title {
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+.trabalho-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+}
+.trabalho-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.trabalho-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.592);
+    border: 4px solid transparent;
+    padding: 1rem 1rem 2rem 1rem;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: border 0.2s;
+}
+.trabalho-card:hover {
+    border-color: #59a9ff;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.392);
+    cursor: pointer;
+
+}
+.trabalho-card:hover img {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+.trabalho-card:active {
+    transform: scale(0.95);
+    transition: transform 0.2s;
+}   
+.trabalho-card h3 {
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.05em;
+}
+.trabalho-card img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+@media (max-width: 1000px) {
+    .trabalho-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .trabalho-card {
+        width: 90vw;
+        max-width: 400px;
+    }
+}
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Somos Humanos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(120deg, #c0c5cc 60%, #a259ff 100%);
+            color: #e7e7e7;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .about-container {
+            max-width: 900px;
+            margin: 4rem auto 0 auto;
+            background: rgba(255,255,255,0.85);
+            color: #23262a;
+            border-radius: 18px;
+            box-shadow: 0 4px 32px rgba(162,89,255,0.10);
+            padding: 3rem 2.5rem;
+            border: 2px solid #ffe600;
+        }
+        .about-title {
+            font-family: 'Arial Black', Arial, sans-serif;
+            font-size: 2.3rem;
+            margin-bottom: 1.2rem;
+            letter-spacing: 0.07em;
+            text-align: center;
+            color: #a259ff;
+        }
+        .about-subtitle {
+            font-size: 1.15rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #23262a;
+            font-weight: bold;
+        }
+        .about-history {
+            font-size: 1.08rem;
+            line-height: 1.7;
+            margin-bottom: 2.2rem;
+            text-align: justify;
+            background: rgba(255,230,0,0.10);
+            border-left: 4px solid #ffe600;
+            padding: 1.1rem 1rem 1.1rem 1.3rem;
+            border-radius: 8px;
+        }
+        .about-creators {
+            margin-top: 2.2rem;
+        }
+        .about-creators-title {
+            font-size: 1.25rem;
+            font-family: 'Arial Black', Arial, sans-serif;
+            margin-bottom: 1rem;
+            color: #a259ff;
+            text-align: center;
+            letter-spacing: 0.06em;
+        }
+        .about-creators-list {
+            display: flex;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .creator-card {
+            background: rgba(255,230,0,0.18);
+            color: #23262a;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(162,89,255,0.08);
+            padding: 1.1rem 1rem 1rem 1rem;
+            width: 210px;
+            text-align: center;
+            margin-bottom: 1.2rem;
+            border: 1px solid #a259ff33;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .creator-card:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 6px 18px #a259ff22;
+        }
+        .creator-name {
+            font-size: 1.08rem;
+            font-family: 'Arial Black', Arial, sans-serif;
+            font-weight: bold;
+            margin-bottom: 0.6rem;
+            color: #23262a;
+            letter-spacing: 0.03em;
+        }
+        .creator-desc {
+            font-size: 0.98rem;
+            color: #23262a;
+            background: rgba(255,255,255,0.55);
+            border-radius: 7px;
+            padding: 0.6rem 0.4rem;
+        }
+        @media (max-width: 900px) {
+            .about-container {
+                padding: 1.5rem 0.7rem;
+            }
+            .about-creators-list {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            .creator-card {
+                width: 90vw;
+            }
+        }
+        @media (max-width: 600px) {
+            .about-title {
+                font-size: 1.5rem;
+            }
+            .about-subtitle {
+                font-size: 1rem;
+            }
+            .about-history {
+                font-size: 0.98rem;
+                padding: 0.8rem 0.3rem 0.8rem 0.7rem;
+            }
+            .creator-card {
+                font-size: 0.95rem;
+                padding: 0.7rem 0.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="about-container">
+        <div class="about-title">Sobre Nós</div>
+        <div class="about-subtitle">
+            Conheça a história e os criadores do Somos Humanos
+        </div>
+        <div class="about-history">
+            O projeto Somos Humanos nasceu do desejo de criar um espaço seguro, acolhedor e inclusivo para todos. Nossa missão é promover igualdade, apoio e oportunidades para pessoas neurodivergentes, LGBT+ e todos que buscam conexão e respeito.<br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum, urna eu cursus cursus, enim erat dictum urna, nec dictum enim erat nec urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti. Etiam euismod, nibh eu facilisis cursus, enim erat dictum urna, nec dictum enim erat nec urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br><br>
+            Desde o início, buscamos inovar e trazer atividades que realmente fazem diferença na vida das pessoas. Nossa equipe acredita que cada pessoa merece ser ouvida, respeitada e apoiada em sua jornada.
+        </div>
+        <div class="about-creators">
+            <div class="about-creators-title">Criadores</div>
+            <div class="about-creators-list">
+                <div class="creator-card">
+                    <div class="creator-name">Maycon Oliveira</div>
+                    <div class="creator-desc">
+                        Fundador e idealizador do projeto. Apaixonado por tecnologia e inclusão social.<br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+                <!-- <div class="creator-card">
+                    <div class="creator-name">Maria Oliveira</div>
+                    <div class="creator-desc">
+                        Responsável pelo conteúdo e atividades educativas.<br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+                <div class="creator-card">
+                    <div class="creator-name">João Silva</div>
+                    <div class="creator-desc">
+                        Desenvolvedor e suporte técnico.<br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
